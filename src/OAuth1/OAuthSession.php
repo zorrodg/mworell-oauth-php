@@ -45,7 +45,7 @@ class OAuthSession
 	/**
 	 * Request an instance of the OAuthSession
 	 */
-	public static function instance ( $store = 'SESSION', $options = array() )
+	public static function instance ( $store = 'Session', $options = array() )
 	{
 	    if (!OAuthSession::$instance)
 	    {
@@ -61,7 +61,7 @@ class OAuthSession
 				$store = basename($file, '.php');
 				$class = $store;
 			}
-			
+
 			OAuthSession::$instance = new $class($options);
 			// if (is_file($file))
 			// {
