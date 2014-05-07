@@ -45,7 +45,7 @@ class OAuthSession
 	/**
 	 * Request an instance of the OAuthSession
 	 */
-	public static function instance ( $store = 'Session', $options = array() )
+	public static function instance ( $store = 'SESSION', $options = array() )
 	{
 	    if (!OAuthSession::$instance)
 	    {
