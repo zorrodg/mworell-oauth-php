@@ -61,24 +61,25 @@ class OAuthSession
 				$store = basename($file, '.php');
 				$class = $store;
 			}
-
-			if (is_file($file))
-			{
-				require_once $file;
+			
+			OAuthSession::$instance = new $class($options);
+			// if (is_file($file))
+			// {
+			// 	require_once $file;
 				
-				if (class_exists($class))
-				{
-					OAuthSession::$instance = new $class($options);
-				}
-				else
-				{
-					throw new OAuthException2('Could not find class '.$class.' in file '.$file);
-				}
-			}
-			else
-			{
-				throw new OAuthException2('No OAuthSession for '.$store.' (file '.$file.')');
-			}
+			// 	if (class_exists($class))
+			// 	{
+			// 		OAuthSession::$instance = new $class($options);
+			// 	}
+			// 	else
+			// 	{
+			// 		throw new OAuthException2('Could not find class '.$class.' in file '.$file);
+			// 	}
+			// }
+			// else
+			// {
+			// 	throw new OAuthException2('No OAuthSession for '.$store.' (file '.$file.')');
+			// }
 	    }
 	    return OAuthSession::$instance;	
 	}
