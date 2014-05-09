@@ -284,17 +284,18 @@ class OAuthRequest
 	{
 		$m     = strtoupper($method);
 		$m     = preg_replace('/[^A-Z0-9]/', '_', $m);
-		$class = 'OAuthSignatureMethod_'.$m;
+		$class = 'OAuth1\\signature_method\\OAuthSignatureMethod_'.$m;
+		$sig = new $class();
 
-		if (file_exists(dirname(__FILE__).'/signature_method/'.$class.'.php'))
-		{
-			require_once dirname(__FILE__).'/signature_method/'.$class.'.php';
-			$sig = new $class();
-		}
-		else
-		{
-			throw new OAuthException2('Unsupported signature method "'.$m.'".');
-		}
+		// if (file_exists(dirname(__FILE__).'/signature_method/'.$class.'.php'))
+		// {
+		// 	require_once dirname(__FILE__).'/signature_method/'.$class.'.php';
+		// 	$sig = new $class();
+		// }
+		// else
+		// {
+		// 	throw new OAuthException2('Unsupported signature method "'.$m.'".');
+		// }
 		return $sig;
 	}
 
