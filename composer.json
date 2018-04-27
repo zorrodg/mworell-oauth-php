@@ -1,5 +1,5 @@
 {
-    "name": "laminsanneh/mworell-oauth-php",
+    "name": "zorrodg/oauth-php",
     "description": "OAuth composer implementation from oauth-php library from Marc Worrell",
     "license": "MIT",
     "authors": [
