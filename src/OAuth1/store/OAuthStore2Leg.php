@@ -32,8 +32,6 @@ namespace OAuth1\store;
  * THE SOFTWARE.
  */
 
-use OAuth1\OAuthException2;
-
 require_once dirname(__FILE__) . '/OAuthStoreAbstract.class.php';
 
 class OAuthStore2Leg extends OAuthStoreAbstract
