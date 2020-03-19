@@ -1,5 +1,5 @@
 {
-    "name": "zorrodg/oauth-php",
+    "name": "winternet-studio/oauth-php",
     "description": "OAuth composer implementation from oauth-php library from Marc Worrell",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,10 @@
         {
             "name": "Andres Zorro",
             "email": "zorrodg@gmail.com"
+        },
+        {
+            "name": "Allan Jensen",
+            "email": "info@winternet.no"
         }
     ],
     "require": {
