@@ -59,9 +59,9 @@ class OAuthStorePDO extends OAuthStoreSQL
 		{
 			try 
 			{
-				$this->conn = new PDO($options['dsn'], $options['username'], @$options['password']);
+				$this->conn = new \PDO($options['dsn'], $options['username'], @$options['password']);
 			}
-			catch (PDOException $e) 
+			catch (\PDOException $e) 
 			{
 				throw new OAuthException2('Could not connect to PDO database: ' . $e->getMessage());
 			}
@@ -86,7 +86,7 @@ class OAuthStorePDO extends OAuthStoreSQL
 				$this->sql_errcheck($sql);
 			}
 		}
-		catch (PDOException $e) 
+		catch (\PDOException $e) 
 		{
 			$this->sql_errcheck($sql);
 		}
@@ -109,9 +109,9 @@ class OAuthStorePDO extends OAuthStoreSQL
 		{
 			$stmt = $this->conn->query($sql);
 			
-			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 		}
-		catch (PDOException $e) 
+		catch (\PDOException $e) 
 		{
 			$this->sql_errcheck($sql);
 		}
@@ -147,14 +147,14 @@ class OAuthStorePDO extends OAuthStoreSQL
 		$sql = $this->sql_printf(func_get_args());
 		try 
 		{
-			$all = $this->conn->query($sql, PDO::FETCH_NUM);
+			$all = $this->conn->query($sql, \PDO::FETCH_NUM);
 			$row = array();
 			foreach ($all as $r) {
 				$row = $r;
 				break;
 			}
 		}
-		catch (PDOException $e)
+		catch (\PDOException $e)
 		{
 			$this->sql_errcheck($sql);
 		}
