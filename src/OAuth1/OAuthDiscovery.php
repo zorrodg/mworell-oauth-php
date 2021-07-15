@@ -37,12 +37,6 @@ use OAuth1\OAuthRequestLogger;
  * THE SOFTWARE.
  */
 
-// require_once dirname(__FILE__).'/discovery/xrds_parse.php';
-
-// require_once dirname(__FILE__).'/OAuthException2.php';
-// require_once dirname(__FILE__).'/OAuthRequestLogger.php';
-
-
 class OAuthDiscovery
 {
 	/**

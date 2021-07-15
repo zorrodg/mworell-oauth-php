@@ -34,9 +34,6 @@ namespace OAuth1\store;
  * THE SOFTWARE.
  */
 
-require_once dirname(__FILE__) . '/OAuthStoreMySQL.php';
-
-
 class OAuthStoreAnymeta extends OAuthStoreMySQL
 {
 	/**
