@@ -35,10 +35,6 @@ use OAuth1\body\OAuthBodyContentDisposition;
  * THE SOFTWARE.
  */
 
-// require_once dirname(__FILE__) . '/OAuthRequestSigner.php';
-// require_once dirname(__FILE__) . '/body/OAuthBodyContentDisposition.php';
-
-
 class OAuthRequester extends OAuthRequestSigner
 {
 	protected $files;
