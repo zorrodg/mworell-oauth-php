@@ -34,8 +34,6 @@ namespace OAuth1\store;
 
 use OAuth1\OAuthException2;
 
-require_once dirname(__FILE__) . '/OAuthStoreAbstract.class.php';
-
 class OAuthStore2Leg extends OAuthStoreAbstract
 {
 	protected $consumer_key;

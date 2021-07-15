@@ -37,9 +37,6 @@ namespace OAuth1\store;
  * Modified from OAuthStoreMySQL to support MySQLi
  */
 
-require_once dirname(__FILE__) . '/OAuthStoreMySQL.php';
-
-
 class OAuthStoreMySQLi extends OAuthStoreMySQL
 {
 	

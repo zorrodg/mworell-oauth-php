@@ -36,10 +36,6 @@ use OAuth1\OAuthException2;
  * THE SOFTWARE.
  */
 
-
-require_once dirname(__FILE__) . '/OAuthStoreAbstract.class.php';
-
-
 abstract class OAuthStoreSQL extends OAuthStoreAbstract
 {
 	/**

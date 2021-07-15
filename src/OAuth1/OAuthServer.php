@@ -36,9 +36,6 @@ use OAuth1\OAuthSession;
  * THE SOFTWARE.
  */
 
-//require_once 'OAuthRequestVerifier.php';
-//require_once 'OAuthSession.php';
-
 class OAuthServer extends OAuthRequestVerifier
 {
 	protected $session;

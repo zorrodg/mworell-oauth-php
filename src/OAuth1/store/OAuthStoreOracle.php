@@ -34,8 +34,6 @@ namespace OAuth1\store;
  * THE SOFTWARE.
  */
 
-require_once dirname(__FILE__) . '/OAuthStoreAbstract.class.php';
-
 abstract class OAuthStoreOracle extends OAuthStoreAbstract {
     /**
      * Maximum delta a timestamp may be off from a previous timestamp.

@@ -33,9 +33,6 @@ namespace OAuth1\store;
  * THE SOFTWARE.
  */
 
-require_once dirname(__FILE__) . '/OAuthStoreSQL.php';
-
-
 class OAuthStorePDO extends OAuthStoreSQL
 {
 	private $conn; // PDO connection

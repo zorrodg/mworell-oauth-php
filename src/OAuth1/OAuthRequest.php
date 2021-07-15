@@ -35,8 +35,6 @@ use OAuth1\OAuthException2;
  */
 
 
-// require_once dirname(__FILE__) . '/OAuthException2.php';
-
 /**
  * Object to parse an incoming OAuth request or prepare an outgoing OAuth request
  */

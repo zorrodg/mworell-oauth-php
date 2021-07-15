@@ -32,9 +32,6 @@ namespace OAuth1\signature;
  * THE SOFTWARE.
  */
 
-
-require_once dirname(__FILE__).'/OAuthSignatureMethod.class.php';
-
 class OAuthSignatureMethodRSASHA1 extends OAuthSignatureMethod
 {
 	public function name() 
