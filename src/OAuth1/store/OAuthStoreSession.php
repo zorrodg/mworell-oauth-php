@@ -33,8 +33,6 @@ namespace OAuth1\store;
  * THE SOFTWARE.
  */
 
-require_once dirname(__FILE__) . '/OAuthStoreAbstract.class.php';
-
 class OAuthStoreSession extends OAuthStoreAbstract
 {
 	private $session; 

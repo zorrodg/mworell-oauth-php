@@ -36,8 +36,6 @@ use OAuth1\OAuthException2;
  * THE SOFTWARE.
  */
 
-//require_once dirname(__FILE__) . '/OAuthException2.php';
-
 class OAuthSession
 {
 	static private $instance = false;
